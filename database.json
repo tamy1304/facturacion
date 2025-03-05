@@ -2,15 +2,15 @@
     "facturas": [
         {
             "id": 1,
-            "cliente": "Juan Pérez",
+            "cliente": "Juan Perez",
             "producto": "Laptop HP",
             "precio": 1200,
             "estado": "pendiente"
         },
         {
             "id": 2,
-            "cliente": "Ana Gómez",
-            "producto": "Mouse Inalámbrico",
+            "cliente": "Ana Gomez",
+            "producto": "Mouse Inalambrico",
             "precio": 25,
             "estado": "pagada"
         }
