@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Facturación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h1 class="text-center">Sistema de Facturación</h1>
+    
+    <section class="card p-4 mb-4">
+        <h2>Registrar Factura</h2>
+        <form id="factura-form">
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Cliente:</label>
+                <input type="text" id="cliente" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Productos:</label>
+                <input type="text" id="producto" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="monto" class="form-label">Precio:</label>
+                <input type="number" id="precio" class="form-control" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </section>
+    
+    <section class="card p-4">
+        <h2>Facturas Registradas</h2>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Detalle</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="facturas-lista">
+                <!-- Facturas se insertarán aquí -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
